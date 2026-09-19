@@ -87,7 +87,7 @@
 
     .expert-name{
       font-size:13.5px;
-      font-weight:900;
+      font-weight:800;
       margin-bottom:3px;
       white-space:nowrap;
       overflow:hidden;
@@ -96,7 +96,7 @@
 
     .expert-role{
       font-size:11px;
-      font-weight:600;
+      font-weight:500;
       opacity:.95;
       white-space:nowrap;
       overflow:hidden;
@@ -146,7 +146,7 @@
       font-size:20px;
       line-height:1.18;
       letter-spacing:-.3px;
-      font-weight:850;
+      font-weight:800;
     }
 
     .support{
@@ -156,7 +156,7 @@
       font-size:14px;
       line-height:1.4;
       color:#353b37;
-      font-weight:600;
+      font-weight:500;
     }
 
     .instruction{
@@ -166,7 +166,7 @@
       font-size:13px;
       line-height:1.4;
       color:var(--muted);
-      font-weight:600;
+      font-weight:500;
     }
 
     /* ---------- STEP 1 ---------- */
@@ -190,7 +190,7 @@
       font-size:20px;
       line-height:1.16;
       letter-spacing:-.25px;
-      font-weight:900;
+      font-weight:800;
       text-transform:uppercase;
       margin:0 auto 16px;
       max-width:560px;
@@ -231,7 +231,7 @@
       color:#fff;
       font-size:16px;
       line-height:1.15;
-      font-weight:900;
+      font-weight:800;
       text-transform:uppercase;
       text-align:center;
       cursor:pointer;
@@ -341,7 +341,7 @@
       cursor:pointer;
       box-shadow:0 4px 13px rgba(27,55,38,.045);
       transition:.18s ease;
-      font-weight:800;
+      font-weight:700;
     }
 
     .single-option{
@@ -410,7 +410,7 @@
       background:#fff;
       color:#fff;
       font-size:15px;
-      font-weight:900;
+      font-weight:700;
     }
 
     .multi-option.selected .check{
@@ -484,7 +484,7 @@
     .loading-title{
       font-size:20px;
       line-height:1.15;
-      font-weight:900;
+      font-weight:800;
       margin-bottom:24px;
     }
 
@@ -578,7 +578,7 @@
       font-size:20px;
       line-height:1.18;
       letter-spacing:-.25px;
-      font-weight:900;
+      font-weight:800;
       text-transform:uppercase;
     }
 
@@ -1039,6 +1039,261 @@
       .age-option{
         font-size:17px;
       }
+    }
+
+  
+    /* ===== AJUSTES FINAIS: VSL FULL WIDTH + ALTERNATIVAS ===== */
+
+    /* VSL totalmente embutida na página, sem margens laterais ou moldura */
+    body.vsl-mode .vsl-page{
+      width:100%;
+      max-width:none;
+      padding:20px 0 30px;
+      margin:0;
+    }
+
+    body.vsl-mode .vsl-headline{
+      padding:0 16px;
+    }
+
+    body.vsl-mode .down-arrow{
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    body.vsl-mode .vsl-wrap{
+      width:100%;
+      max-width:none;
+      margin:0;
+      padding:0;
+      border:0;
+      border-radius:0;
+      box-shadow:none;
+      overflow:visible;
+      background:#000;
+    }
+
+    body.vsl-mode .vsl-wrap vturb-smartplayer{
+      display:block !important;
+      width:100% !important;
+      max-width:none !important;
+      margin:0 !important;
+      padding:0 !important;
+    }
+
+    /* Alternativas de escolha única: seta no lugar da bolinha */
+    .single-option{
+      box-shadow:0 4px 12px rgba(17, 48, 30, .07);
+    }
+
+    .single-option:hover{
+      box-shadow:0 6px 16px rgba(17, 48, 30, .10);
+    }
+
+    .single-option .dot{
+      width:27px;
+      height:27px;
+      flex:0 0 27px;
+      border:none;
+      border-radius:50%;
+      background:#f1f5f2;
+      display:grid;
+      place-items:center;
+      color:#5f6a63;
+      font-size:20px;
+      line-height:1;
+    }
+
+    .single-option .dot::before{
+      content:"›";
+      transform:translateY(-1px);
+    }
+
+    .single-option.selected .dot{
+      border:none;
+      background:var(--green);
+      color:#fff;
+    }
+
+    .single-option.selected .dot::after{
+      display:none;
+    }
+
+    /* Faixa etária também é uma escolha que avança ao toque */
+    .age-option{
+      position:relative;
+      padding-right:45px;
+      box-shadow:0 4px 12px rgba(17, 48, 30, .07);
+    }
+
+    .age-option::after{
+      content:"›";
+      position:absolute;
+      right:14px;
+      top:50%;
+      transform:translateY(-52%);
+      width:27px;
+      height:27px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:#f1f5f2;
+      color:#5f6a63;
+      font-size:20px;
+      line-height:1;
+      font-weight:500;
+    }
+
+    .age-option.selected::after{
+      background:var(--green);
+      color:#fff;
+    }
+
+    @media(max-width:370px){
+      body.vsl-mode .vsl-headline{
+        padding-left:12px;
+        padding-right:12px;
+      }
+
+      .single-option .dot,
+      .age-option::after{
+        width:25px;
+        height:25px;
+        flex-basis:25px;
+        font-size:18px;
+      }
+    }
+
+  
+    /* ===== AJUSTES FINAIS: ALTERNATIVAS ===== */
+
+    .single-option{
+      box-shadow:0 4px 12px rgba(17,48,30,.07);
+    }
+
+    .single-option:hover{
+      box-shadow:0 6px 16px rgba(17,48,30,.10);
+    }
+
+    .single-option .dot{
+      width:27px;
+      height:27px;
+      flex:0 0 27px;
+      border:none;
+      border-radius:50%;
+      background:#f1f5f2;
+      display:grid;
+      place-items:center;
+      color:#5f6a63;
+      font-size:20px;
+      line-height:1;
+    }
+
+    .single-option .dot::before{
+      content:"›";
+      transform:translateY(-1px);
+    }
+
+    .single-option.selected .dot{
+      border:none;
+      background:var(--green);
+      color:#fff;
+    }
+
+    .single-option.selected .dot::after{
+      display:none;
+    }
+
+    .age-option{
+      position:relative;
+      padding-right:45px;
+      box-shadow:0 4px 12px rgba(17,48,30,.07);
+    }
+
+    .age-option::after{
+      content:"›";
+      position:absolute;
+      right:14px;
+      top:50%;
+      transform:translateY(-52%);
+      width:27px;
+      height:27px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:#f1f5f2;
+      color:#5f6a63;
+      font-size:20px;
+      line-height:1;
+      font-weight:500;
+    }
+
+    .age-option.selected::after{
+      background:var(--green);
+      color:#fff;
+    }
+
+    /* VSL: sem dimensionamento extra; o próprio código do VTurb controla largura e altura */
+    body.vsl-mode .vsl-page{
+      padding:20px 12px 30px;
+    }
+
+    body.vsl-mode .vsl-wrap{
+      width:auto;
+      max-width:none;
+      margin:0;
+      padding:0;
+      border:0;
+      border-radius:0;
+      box-shadow:none;
+      overflow:visible;
+      background:transparent;
+    }
+
+    @media(max-width:370px){
+      .single-option .dot,
+      .age-option::after{
+        width:25px;
+        height:25px;
+        flex-basis:25px;
+        font-size:18px;
+      }
+    }
+
+  
+    /* ===== HOTFIX VSL =====
+       Mantém o player no tamanho do próprio código do VTurb
+       e neutraliza overrides anteriores que o deixavam gigante. */
+    body.vsl-mode .vsl-page{
+      width:100%;
+      max-width:760px;
+      margin:0 auto;
+      padding:20px 12px 30px;
+    }
+
+    body.vsl-mode .vsl-wrap{
+      width:100% !important;
+      max-width:100% !important;
+      margin:0 auto !important;
+      padding:0 !important;
+      border:0 !important;
+      border-radius:0 !important;
+      box-shadow:none !important;
+      overflow:visible !important;
+      background:transparent !important;
+      text-align:center !important;
+    }
+
+    body.vsl-mode .vsl-wrap vturb-smartplayer{
+      display:block !important;
+      width:100% !important;
+      max-width:400px !important;
+      margin:0 auto !important;
+      padding:0 !important;
+    }
+
+    body.vsl-mode .vsl-wrap .vturb-player-placeholder{
+      background-color:black !important;
     }
 
   </style>
