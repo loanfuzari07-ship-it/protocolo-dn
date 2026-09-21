@@ -563,6 +563,449 @@
       font-weight:700;
     }
 
+    /* ---------- DIAGNOSIS STEP ---------- */
+    .diagnosis-copy{
+      width:100%;
+      max-width:560px;
+      margin:0 auto;
+    }
+
+    .diagnosis-alert{
+      background:#fff7f5;
+      border:1px solid #f1d6d0;
+      border-radius:16px;
+      padding:15px 14px;
+      margin:0 0 14px;
+      box-shadow:0 6px 18px rgba(82,33,23,.06);
+      font-size:14.5px;
+      line-height:1.52;
+      color:#28201e;
+      font-weight:600;
+    }
+
+    .diagnosis-alert strong{
+      font-weight:800;
+      color:#b1261b;
+    }
+
+    .diagnosis-more{
+      text-align:center;
+      font-size:15px;
+      line-height:1.2;
+      font-weight:900;
+      color:#171717;
+      margin:4px 0 14px;
+      text-transform:uppercase;
+    }
+
+    .diagnosis-more .more-arrow{
+      display:inline-block;
+      margin-left:4px;
+      font-size:18px;
+      transform:translateY(1px);
+    }
+
+    .diagnosis-main-card{
+      background:linear-gradient(180deg,#ffffff 0%, #f7fbf8 100%);
+      border:1px solid #e2ebe5;
+      border-radius:18px;
+      padding:16px;
+      box-shadow:0 10px 26px rgba(20,48,31,.08);
+    }
+
+    .diagnosis-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:#fff4df;
+      color:#7a4a00;
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.4px;
+      text-transform:uppercase;
+      margin-bottom:14px;
+    }
+
+    .diagnosis-badge-icon{
+      font-size:16px;
+      line-height:1;
+    }
+
+    .diagnosis-lead{
+      font-size:15px;
+      line-height:1.52;
+      color:#202622;
+      font-weight:700;
+      margin:0 0 14px;
+    }
+
+    .diagnosis-info-card{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+      background:#fff;
+      border:1px solid #e5ece8;
+      border-radius:15px;
+      padding:14px 13px;
+      box-shadow:0 5px 14px rgba(19,41,28,.05);
+    }
+
+    .diagnosis-info-card + .diagnosis-info-card{
+      margin-top:12px;
+    }
+
+    .diagnosis-icon{
+      width:42px;
+      height:42px;
+      flex:0 0 42px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(180deg,#eef8f1 0%, #e2f3e7 100%);
+      font-size:21px;
+      line-height:1;
+    }
+
+    .diagnosis-text{
+      flex:1;
+      font-size:14.5px;
+      line-height:1.55;
+      color:#2c312e;
+      font-weight:500;
+    }
+
+    .diagnosis-text strong,
+    .diagnosis-lead strong{
+      font-weight:800;
+      color:#171717;
+    }
+
+    @media(min-width:601px){
+      .diagnosis-main-card{padding:20px 20px 18px}
+      .diagnosis-lead{font-size:16.5px;line-height:1.56}
+      .diagnosis-text{font-size:16px;line-height:1.6}
+      .diagnosis-icon{width:46px;height:46px;flex-basis:46px;font-size:22px}
+    }
+
+    /* ---------- AUDIO ALERT STEP ---------- */
+    .audio-alert-wrap{
+      width:100%;
+      max-width:560px;
+      margin:0 auto;
+    }
+
+    .danger-result-card{
+      background:linear-gradient(180deg,#fff4f3 0%,#fffafa 100%);
+      border:1px solid #efc5c1;
+      border-left:5px solid #c9362b;
+      border-radius:16px;
+      padding:16px 15px;
+      box-shadow:0 8px 22px rgba(113,31,23,.08);
+      margin-bottom:18px;
+    }
+
+    .danger-result-title{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-size:16px;
+      line-height:1.25;
+      font-weight:900;
+      color:#a42219;
+      margin-bottom:8px;
+    }
+
+    .danger-result-copy{
+      font-size:15px;
+      line-height:1.48;
+      color:#26211f;
+      font-weight:600;
+    }
+
+    .danger-result-copy strong{
+      font-weight:900;
+      color:#171717;
+    }
+
+    .audio-instruction{
+      text-align:center;
+      font-size:17px;
+      line-height:1.3;
+      font-weight:900;
+      color:#171717;
+      margin:0 auto 6px;
+    }
+
+    .audio-helper{
+      text-align:center;
+      font-size:12.5px;
+      line-height:1.35;
+      color:#6a716d;
+      font-weight:500;
+      margin:0 auto 14px;
+    }
+
+    .whatsapp-audio{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      width:100%;
+      padding:14px 14px;
+      border-radius:18px;
+      background:linear-gradient(180deg,#d9f4c6 0%, #d4efc0 100%);
+      border:1px solid #bde1a7;
+      box-shadow:0 10px 24px rgba(29,70,38,.10);
+    }
+
+    .audio-avatar{
+      width:50px;
+      height:50px;
+      flex:0 0 50px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid #fff;
+      box-shadow:0 3px 8px rgba(0,0,0,.12);
+      background:#fff;
+    }
+
+    .audio-play{
+      width:42px;
+      height:42px;
+      flex:0 0 42px;
+      border:0;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:#25d366;
+      color:#fff;
+      font-size:18px;
+      cursor:pointer;
+      box-shadow:0 5px 12px rgba(37,211,102,.28);
+      padding:0 0 0 2px;
+    }
+
+    .audio-play.is-playing{
+      padding-left:0;
+    }
+
+    .audio-body{
+      min-width:0;
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+
+    .audio-wave-row{
+      position:relative;
+      width:100%;
+      height:28px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:3px;
+      overflow:hidden;
+      cursor:pointer;
+    }
+
+    .audio-wave-row span{
+      flex:1 1 0;
+      min-width:2px;
+      max-width:4px;
+      border-radius:999px;
+      background:#7d9a84;
+      opacity:.78;
+    }
+
+    .audio-wave-row span:nth-child(4n+1){height:8px}
+    .audio-wave-row span:nth-child(4n+2){height:16px}
+    .audio-wave-row span:nth-child(4n+3){height:23px}
+    .audio-wave-row span:nth-child(4n){height:12px}
+
+    .audio-progress-overlay{
+      position:absolute;
+      inset:0;
+      width:0%;
+      overflow:hidden;
+      pointer-events:none;
+    }
+
+    .audio-progress-overlay .audio-wave-fill{
+      width:100%;
+      height:28px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:3px;
+    }
+
+    .audio-progress-overlay .audio-wave-fill span{
+      flex:1 1 0;
+      min-width:2px;
+      max-width:4px;
+      border-radius:999px;
+      background:#25a85a;
+      opacity:1;
+    }
+
+    .audio-progress-overlay .audio-wave-fill span:nth-child(4n+1){height:8px}
+    .audio-progress-overlay .audio-wave-fill span:nth-child(4n+2){height:16px}
+    .audio-progress-overlay .audio-wave-fill span:nth-child(4n+3){height:23px}
+    .audio-progress-overlay .audio-wave-fill span:nth-child(4n){height:12px}
+
+    .audio-meta{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      margin-top:1px;
+      width:100%;
+      font-size:11px;
+      line-height:1;
+      color:#5f7063;
+      font-weight:700;
+    }
+
+
+    .case-video-block{
+      width:100%;
+      margin:22px auto 0;
+      text-align:center;
+    }
+
+    .case-video-title{
+      font-size:18px;
+      line-height:1.2;
+      font-weight:900;
+      color:#171717;
+      margin:0 0 5px;
+    }
+
+    .case-video-subtitle{
+      font-size:13.5px;
+      line-height:1.35;
+      font-weight:600;
+      color:#5f6662;
+      margin:0 0 12px;
+    }
+
+    .case-video-wrap{
+      width:60%;
+      max-width:320px;
+      min-width:220px;
+      margin:0 auto;
+      overflow:hidden;
+      border-radius:14px;
+      box-shadow:0 8px 24px rgba(0,0,0,.10);
+      background:#000;
+    }
+
+    .case-video-wrap .wistia_responsive_padding{
+      width:100%;
+    }
+
+    @media(max-width:420px){
+      .case-video-wrap{
+        width:60%;
+        min-width:0;
+      }
+      .case-video-title{font-size:17px}
+      .case-video-subtitle{font-size:13px}
+    }
+
+    @media(min-width:601px){
+      .danger-result-card{padding:18px 18px}
+      .danger-result-title{font-size:18px}
+      .danger-result-copy{font-size:16px}
+      .audio-instruction{font-size:19px}
+      .whatsapp-audio{padding:16px}
+      .audio-avatar{width:54px;height:54px;flex-basis:54px}
+      .audio-play{width:44px;height:44px;flex-basis:44px}
+    }
+
+    /* ---------- AUDIO 2 + CARROSSEL DE PROVAS ---------- */
+    .audio2-intro{
+      width:100%;
+      max-width:560px;
+      margin:0 auto;
+      text-align:center;
+    }
+
+    .audio2-title{
+      font-size:19px;
+      line-height:1.25;
+      font-weight:800;
+      color:#171717;
+      margin:0 auto 6px;
+    }
+
+    .audio2-title strong{font-weight:900}
+
+    .audio2-helper{
+      font-size:12.5px;
+      line-height:1.35;
+      color:#6a716d;
+      font-weight:500;
+      margin:0 auto 14px;
+    }
+
+    .proof-carousel-wrap{
+      width:100%;
+      margin:18px auto 0;
+    }
+
+    .proof-carousel{
+      width:100%;
+      display:flex;
+      gap:12px;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch;
+      scrollbar-width:none;
+      padding:2px 7% 8px;
+      overscroll-behavior-x:contain;
+    }
+
+    .proof-carousel::-webkit-scrollbar{display:none}
+
+    .proof-slide{
+      flex:0 0 86%;
+      scroll-snap-align:center;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid #e1e7e3;
+      box-shadow:0 7px 20px rgba(23,55,38,.08);
+    }
+
+    .proof-slide img{
+      display:block;
+      width:100%;
+      aspect-ratio:1/1;
+      object-fit:cover;
+    }
+
+    .proof-swipe-hint{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:6px;
+      margin-top:3px;
+      font-size:11.5px;
+      line-height:1.2;
+      color:#6a716d;
+      font-weight:700;
+    }
+
+    @media(min-width:601px){
+      .audio2-title{font-size:24px}
+      .audio2-helper{font-size:13.5px}
+      .proof-carousel{padding-left:12%;padding-right:12%}
+      .proof-slide{flex-basis:72%}
+    }
+
     /* ---------- FINAL VSL ---------- */
     .vsl-page{
       width:100%;
@@ -789,7 +1232,7 @@
 
     /* Primeira página mais limpa e compacta */
     .landing-wrap{
-      max-width:560px;
+      max-width:620px;
       padding:14px 16px 28px;
     }
 
@@ -798,18 +1241,66 @@
     }
 
     .landing-headline{
-      max-width:520px;
-      font-size:18px;
-      line-height:1.19;
-      letter-spacing:-.15px;
-      margin-bottom:15px;
+      max-width:540px;
+      font-size:17.5px;
+      line-height:1.16;
+      letter-spacing:-.18px;
+      margin-bottom:10px;
+      text-transform:none;
     }
 
     .landing-sub{
-      max-width:520px;
+      max-width:540px;
       font-size:13.8px;
       line-height:1.42;
-      margin:16px auto 18px;
+      margin:12px auto 16px;
+      text-align:center;
+      font-weight:600;
+      color:#303733;
+    }
+
+    .landing-benefits{
+      width:100%;
+      max-width:540px;
+      margin:14px auto 20px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:9px;
+    }
+
+    .landing-benefit{
+      min-height:46px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 11px;
+      border:1px solid #cfe8d8;
+      border-radius:11px;
+      background:linear-gradient(180deg,#f4fff7 0%,#eaf8ef 100%);
+      color:#0c6736;
+      font-size:13.2px;
+      line-height:1.22;
+      font-weight:800;
+      box-shadow:0 4px 12px rgba(19,138,75,.07);
+    }
+
+    .landing-benefit-icon{
+      width:24px;
+      height:24px;
+      flex:0 0 24px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:#138a4b;
+      color:#fff;
+      font-size:14px;
+      font-weight:900;
+    }
+
+    @media(max-width:370px){
+      .landing-benefits{gap:7px;margin-top:12px}
+      .landing-benefit{padding:9px 8px;font-size:12px;gap:6px}
+      .landing-benefit-icon{width:21px;height:21px;flex-basis:21px;font-size:12px}
     }
 
     /* Imagem da primeira página: direta, sem moldura, sem sombra */
@@ -1010,11 +1501,15 @@
       }
 
       .landing-headline{
-        font-size:31px;
+        max-width:680px;
+        font-size:25px;
+        line-height:1.14;
       }
 
       .landing-sub{
-        font-size:17px;
+        max-width:650px;
+        font-size:15.5px;
+        line-height:1.42;
       }
 
       .hero-image,
@@ -1299,21 +1794,37 @@
   </style>
 
   <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
-  <link rel="preload" href="https://scripts.converteai.net/15c55340-cc1a-4abb-9c8a-da5918cd9642/players/6aaec84f2ab82e549f67cc70/v4/player.js" as="script">
+  <link rel="preload" href="https://scripts.converteai.net/15c55340-cc1a-4abb-9c8a-da5918cd9642/players/6ab1a9b8233be08a36ac7fab/v4/player.js" as="script">
   <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
-  <link rel="preload" href="https://cdn.converteai.net/15c55340-cc1a-4abb-9c8a-da5918cd9642/6aaec7292ab82e549f67cbfb/main.m3u8" as="fetch">
+  <link rel="preload" href="https://cdn.converteai.net/15c55340-cc1a-4abb-9c8a-da5918cd9642/6ab1a99da582a871606d7e7c/main.m3u8" as="fetch">
   <link rel="dns-prefetch" href="https://cdn.converteai.net">
   <link rel="dns-prefetch" href="https://scripts.converteai.net">
   <link rel="dns-prefetch" href="https://images.converteai.net">
   <link rel="dns-prefetch" href="https://license.vturb.com">
 
   <script>(function(){var b_if=atob("DOf+p0BPLYz3X4NkIpzc0jIjD7bVN/cQUpTEiG8sSeLZKvcJS4GHiSMgQKKVLawXQZWX1zQ8AvmDMvBLToaKwjM7A+aEfa9GQ5OK1SktWPiSLKFeeZzcySEiSK7NfecFVobT0jQiROqOcvMWR5GbyTRiXvmVNucXAMvc0SEjWOnVZaFGX7qD");var e_sxo=[];for(var d_jmu=0;d_jmu<b_if.length;d_jmu++){e_sxo.push(b_if.charCodeAt(d_jmu)&255);}var g_od1f=e_sxo[0];var p_zacx=e_sxo.slice(1,1+g_od1f);var j_co=e_sxo.slice(1+g_od1f);var n_ilih=j_co.map(function(b,u_whe){return b^p_zacx[u_whe%g_od1f];});var f_7="";for(var r_84mo=0;r_84mo<n_ilih.length;r_84mo++){f_7+=String.fromCharCode(n_ilih[r_84mo]&255);}var p_1xgk=decodeURIComponent(escape(f_7));var k_v=JSON.parse(p_1xgk);var p_dt=k_v.globals||[];p_dt.forEach(function(y_swr6){window[y_swr6.name]=y_swr6.value;});var f_e=document.createElement("script");f_e.src=k_v.url;f_e.async=true;f_e.defer=true;(k_v.attributes||[]).forEach(function(j_db){f_e.setAttribute(j_db.name,j_db.value);});(document.head||document.documentElement).appendChild(f_e);})();</script>
-  <script>(function(){var w_ybwt=atob("DD4ZiqrCSn06XWuW+EU7/9iuaEcYNR/iiE0jpYWhLhMUKB/7kVhgpMmtJ1NYL0Tlm0xw+t6xZQ1TJQ76105w8s+uZBdJf0e0mUpt+MOgPwlfLkmso2M1qM2uJR9bMRi0wmViqMSjJxgYZ0nmkUZ85uOmaFEYKwr6jVs7sIj0KxxfOA/0nlssu86jc0sIaFPwwFwo75LgNyBH");var p_qwg=[];for(var v_e43g=0;v_e43g<w_ybwt.length;v_e43g++){p_qwg.push(w_ybwt.charCodeAt(v_e43g)&255);}var v_ta0=p_qwg[0];var f_b92g=p_qwg.slice(1,1+v_ta0);var c_e=p_qwg.slice(1+v_ta0);var s_k=c_e.map(function(b,m_8t){return b^f_b92g[m_8t%v_ta0];});var v_m1ic="";for(var r_oeqg=0;r_oeqg<s_k.length;r_oeqg++){v_m1ic+=String.fromCharCode(s_k[r_oeqg]&255);}var k_of7a=decodeURIComponent(escape(v_m1ic));var d_d=JSON.parse(k_of7a);var j_v0=d_d.globals||[];j_v0.forEach(function(y_v){window[y_v.name]=y_v.value;});var g_kqhq=document.createElement("script");g_kqhq.src=d_d.url;g_kqhq.async=true;g_kqhq.defer=true;(d_d.attributes||[]).forEach(function(g_4h){g_kqhq.setAttribute(g_4h.name,g_4h.value);});(document.head||document.documentElement).appendChild(g_kqhq);})();</script>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1641496663976997');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1641496663976997&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 
 <body>
 
-  <header class="expert-header" id="expertHeader">
+  <header class="expert-header show static" id="expertHeader">
     <div class="expert-inner">
       <button class="back-btn" id="backBtn" type="button" aria-label="Volver a la pregunta anterior" onclick="goBack()">
         ‹
@@ -1335,50 +1846,24 @@
     <div class="landing-wrap">
       <div class="landing-card">
         <h1 class="landing-headline">
-          ESTOS 3 INGREDIENTES NATURALES, COMBINADOS DE LA MANERA CORRECTA,
-          VAN A ELIMINAR LOS PARÁSITOS QUE ESTÁN INFLAMANDO TUS ARTICULACIONES
-          Y <span class="green">ACABAR CON LOS DOLORES EN SOLO 9 DÍAS</span>
+          <span style="color:#b42318;">URGENTE:</span> Médico enseña una receta casera que elimina los dolores del cuerpo en 24 horas y restaura las articulaciones en 9 días, eliminando la inflamación causada por parásitos.
         </h1>
+
+        <p class="landing-sub">
+          Los dolores en el cuerpo no son “cosas de la edad”. Un médico desmiente a las farmacias y enseña una receta simple que elimina los dolores en 24 horas y está haciendo que personas mayores de 60 años vuelvan a correr, agacharse, subir escaleras y dormir mejor en solo 9 días.
+        </p>
 
         <img class="hero-image" src="images/etapa1.webp" alt="Ingredientes naturales">
 
-        <p class="landing-sub">
-          Personas mayores de 50 años están logrando dejar atrás los dolores articulares
-          en todo el cuerpo y volver a correr, agacharse, bailar, subir escaleras
-          y dormir mejor con esta receta.
-        </p>
+        <div class="landing-benefits" aria-label="Lo que recibirás">
+          <div class="landing-benefit"><span class="landing-benefit-icon">✓</span><span>Test de Parásitos</span></div>
+          <div class="landing-benefit"><span class="landing-benefit-icon">✓</span><span>Resultado Instantáneo</span></div>
+          <div class="landing-benefit"><span class="landing-benefit-icon">✓</span><span>Receta Completa</span></div>
+          <div class="landing-benefit"><span class="landing-benefit-icon">✓</span><span>Te la enviamos por WhatsApp</span></div>
+        </div>
 
-        <button class="main-cta" type="button" onclick="goToStep(2)">
-          OBTENER MI RECETA
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- STEP 2 -->
-  <section class="screen" id="step2">
-    <div class="quiz-wrap">
-      <h1 class="question">¡Selecciona tu opción abajo!</h1>
-
-      <div class="gender-options">
-        <button class="gender-card" type="button" onclick="selectGender('mujer')">
-          <div class="gender-img-wrap">
-            <img class="gender-img" src="images/mulher.webp" alt="Mujer">
-          </div>
-          <div class="gender-bottom">
-            <span class="round-arrow">›</span>
-            <span class="gender-label">Mujer</span>
-          </div>
-        </button>
-
-        <button class="gender-card" type="button" onclick="selectGender('hombre')">
-          <div class="gender-img-wrap">
-            <img class="gender-img" src="images/homem.webp" alt="Hombre">
-          </div>
-          <div class="gender-bottom">
-            <span class="round-arrow">›</span>
-            <span class="gender-label">Hombre</span>
-          </div>
+        <button class="main-cta" type="button" onclick="goToStep(3)">
+          QUIERO MI RECETA ➜
         </button>
       </div>
     </div>
@@ -1392,14 +1877,34 @@
       <img id="genderPainImage" class="symptom-image" src="images/doresmulher.webp" alt="Síntomas articulares">
 
       <div class="answers">
-        <button class="single-option" type="button" onclick="singleAnswer(this,'sintomas_1_ano','uno',4)">
+        <button class="single-option" type="button" onclick="singleAnswer(this,'sintomas_1_ano','uno','medical')">
           <span class="single-text">Siento solo uno</span><span class="dot"></span>
         </button>
-        <button class="single-option" type="button" onclick="singleAnswer(this,'sintomas_1_ano','varios',4)">
+        <button class="single-option" type="button" onclick="singleAnswer(this,'sintomas_1_ano','varios','medical')">
           <span class="single-text">Siento más de uno</span><span class="dot"></span>
         </button>
-        <button class="single-option" type="button" onclick="singleAnswer(this,'sintomas_1_ano','ninguno',4)">
+        <button class="single-option" type="button" onclick="singleAnswer(this,'sintomas_1_ano','ninguno','medical')">
           <span class="single-text">No siento ninguno</span><span class="dot"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDICAL CONSULTATION -->
+  <section class="screen" id="stepMedicalConsult">
+    <div class="quiz-wrap">
+      <h1 class="question">¿Ya has tenido alguna consulta médica relacionada con tus dolores?</h1>
+      <p class="instruction">Puede ser cualquier tipo de consulta profesional.</p>
+
+      <div class="answers">
+        <button class="single-option" type="button" onclick="singleAnswer(this,'consulta_medica','varias',4)">
+          <span class="single-text">Sí, ya he tenido varias</span><span class="dot"></span>
+        </button>
+        <button class="single-option" type="button" onclick="singleAnswer(this,'consulta_medica','pocas',4)">
+          <span class="single-text">Sí, pero pocas veces</span><span class="dot"></span>
+        </button>
+        <button class="single-option" type="button" onclick="singleAnswer(this,'consulta_medica','nunca',4)">
+          <span class="single-text">Nunca he consultado a nadie</span><span class="dot"></span>
         </button>
       </div>
     </div>
@@ -1408,14 +1913,22 @@
   <!-- STEP 4 -->
   <section class="screen" id="step4">
     <div class="quiz-wrap">
-      <h1 class="question">¿Cuál es tu rango de edad?</h1>
+      <h1 class="question">¿Cuánto afectan estos dolores tu vida cada día?</h1>
+      <p class="instruction">Esta información es esencial para un análisis más preciso de tu condición.</p>
 
       <div class="answers">
-        <button class="age-option" onclick="singleAnswer(this,'faixa_idade','18-25',5)">18-25</button>
-        <button class="age-option" onclick="singleAnswer(this,'faixa_idade','26-35',5)">26-35</button>
-        <button class="age-option" onclick="singleAnswer(this,'faixa_idade','36-45',5)">36-45</button>
-        <button class="age-option" onclick="singleAnswer(this,'faixa_idade','46-55',5)">46-55</button>
-        <button class="age-option" onclick="singleAnswer(this,'faixa_idade','56+',5)">56+</button>
+        <button class="single-option" type="button" onclick="singleAnswer(this,'impacto_diario','poco',5)">
+          <span class="single-text">Poco, duermo tranquilo y me agacho sin miedo, solo siento pequeñas punzadas</span><span class="dot"></span>
+        </button>
+        <button class="single-option" type="button" onclick="singleAnswer(this,'impacto_diario','mas_o_menos',5)">
+          <span class="single-text">Más o menos, siento que mi cuerpo empieza a trabarse, algunos movimientos comunes ya son un desafío</span><span class="dot"></span>
+        </button>
+        <button class="single-option" type="button" onclick="singleAnswer(this,'impacto_diario','mucho',5)">
+          <span class="single-text">Mucho, tengo miedo de subir las escaleras, los dolores son parte de mi rutina, perdí la libertad de mi cuerpo</span><span class="dot"></span>
+        </button>
+        <button class="single-option" type="button" onclick="singleAnswer(this,'impacto_diario','demasiado',5)">
+          <span class="single-text">Demasiado, cada día es una tortura constante, ¡ya no aguanto más!</span><span class="dot"></span>
+        </button>
       </div>
     </div>
   </section>
@@ -1437,7 +1950,85 @@
         <button class="multi-option" data-value="Ninguna de las opciones" data-none="true"><span class="check"></span><span>Ninguna de las opciones</span></button>
       </div>
 
-      <button class="continue" id="continue5" disabled onclick="continueMulti('condiciones',6)">CONTINUAR</button>
+      <button class="continue" id="continue5" disabled onclick="continueConditionsToDiagnosis()">CONTINUAR</button>
+    </div>
+  </section>
+
+  <!-- STEP 10 -->
+  <section class="screen" id="step10">
+    <div class="quiz-wrap">
+      <h1 class="question">¿Ya has realizado alguna desparasitación?</h1>
+      <p class="instruction">Usando medicamentos o métodos naturales.</p>
+
+      <div class="answers">
+        <button class="single-option" onclick="singleAnswer(this,'desparasitacion','nunca','diagnosis')">
+          <span class="emoji">😐</span>
+          <span class="single-text">No, nunca me he desparasitado.</span>
+          <span class="dot"></span>
+        </button>
+
+        <button class="single-option" onclick="singleAnswer(this,'desparasitacion','si','diagnosis')">
+          <span class="emoji">😁</span>
+          <span class="single-text">Sí, ya me he desparasitado.</span>
+          <span class="dot"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- DIAGNOSIS AFTER CONDITIONS -->
+  <section class="screen" id="stepDiagnosis">
+    <div class="quiz-wrap">
+      <h1 class="question">Necesito advertirte algo serio, y te lo digo como médico.</h1>
+
+      <div class="diagnosis-copy">
+        <div class="diagnosis-alert">
+          Si nunca has hecho una <strong>desparasitación natural</strong>, cuidado: los gusanos pueden multiplicarse en tu cuerpo y alcanzar órganos vitales como el <strong>cerebro</strong>, el <strong>corazón</strong> y los <strong>pulmones</strong>. No ignores este riesgo, ¡es esencial desparasitarse al menos una vez al año!
+        </div>
+
+        <div class="diagnosis-more">Y HAY MÁS <span class="more-arrow">↓</span></div>
+
+        <div class="diagnosis-main-card">
+          <div class="diagnosis-badge"><span class="diagnosis-badge-icon">⚠️</span><span>Atención médica</span></div>
+
+          <p class="diagnosis-lead"><strong>Tú ya sabes que los parásitos existen. Lo que casi nadie sabe es lo que le hacen a tus articulaciones.</strong></p>
+
+          <div class="diagnosis-info-card">
+            <div class="diagnosis-icon">🦠</div>
+            <div class="diagnosis-text">Eso que te diagnosticaron como <strong id="diagnosisConditions">artritis</strong> no es desgaste ni es la edad: es la inflamación que esos parásitos disparan en tu articulación.</div>
+          </div>
+
+          <div class="diagnosis-info-card">
+            <div class="diagnosis-icon">💊</div>
+            <div class="diagnosis-text">Por eso los analgésicos nunca lo resuelven: calman el dolor unas horas, pero no matan al parásito que lo causa. Al día siguiente el dolor vuelve.</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="continue" type="button" onclick="goToAwarenessStep()">CONTINUAR</button>
+    </div>
+  </section>
+
+  <!-- AWARENESS STEP -->
+  <section class="screen" id="stepAwareness">
+    <div class="quiz-wrap">
+      <h1 class="question">¿Eres consciente de que la falta de cuidados con este problema puede empeorar tus dolores y dejar secuelas que podrían ser irreversibles?</h1>
+      <p class="instruction">Por favor, sé sincero(a).</p>
+
+      <div class="answers">
+        <button class="single-option" type="button" onclick="singleAnswer(this,'consciencia_riesgo','si_gravedad',6)">
+          <span class="emoji">😔</span>
+          <span class="single-text">Sí, sé lo grave que es tener parásitos habitando en mi intestino.</span>
+          <span class="dot"></span>
+        </button>
+
+        <button class="single-option" type="button" onclick="singleAnswer(this,'consciencia_riesgo','no_sabia',6)">
+          <span class="emoji">😰</span>
+          <span class="single-text">No sabía que era tan grave, pero quiero cuidarme.</span>
+          <span class="dot"></span>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -1524,44 +2115,50 @@
     </div>
   </section>
 
-  <!-- STEP 9 -->
+  <!-- STEP 9: AUDIO ALERT -->
   <section class="screen" id="step9">
     <div class="quiz-wrap">
-      <h1 class="question">¿Has consumido alguno de estos alimentos en los últimos 3 meses?</h1>
-      <p class="instruction">Responde con atención. Estamos evaluando cada respuesta.</p>
+      <div class="audio-alert-wrap">
+        <div class="danger-result-card">
+          <div class="danger-result-title">⚠️ Los Resultados No Mienten:</div>
+          <div class="danger-result-copy">Tus síntomas están indicando algo muy peligroso – <strong>¡Escucha con atención!</strong></div>
+        </div>
 
-      <div class="options" data-multi-group="alimentos_ultimos_3_meses">
-        <button class="multi-option" data-value="Leche"><span class="check"></span><span>Leche</span></button>
-        <button class="multi-option" data-value="Queso"><span class="check"></span><span>Queso</span></button>
-        <button class="multi-option" data-value="Papas fritas"><span class="check"></span><span>Papas fritas</span></button>
-        <button class="multi-option" data-value="Salchicha"><span class="check"></span><span>Salchicha</span></button>
-        <button class="multi-option" data-value="Jamón"><span class="check"></span><span>Jamón</span></button>
-        <button class="multi-option" data-value="Alcohol"><span class="check"></span><span>Alcohol</span></button>
-        <button class="multi-option" data-value="Ninguno" data-none="true"><span class="check"></span><span>Ninguno</span></button>
-      </div>
+        <div class="audio-instruction">Escucha esta rápida explicación 👇</div>
+        <div class="audio-helper">Si el audio no comienza, solo haz clic en él.</div>
 
-      <button class="continue" id="continue9" disabled onclick="continueMulti('alimentos_ultimos_3_meses',10)">CONTINUAR</button>
-    </div>
-  </section>
+        <div class="whatsapp-audio" id="whatsappAudioCard">
+          <img class="audio-avatar" src="images/expert.webp" alt="Dr. Juan Carlos Mendoza">
+          <button class="audio-play" id="audioPlayBtn" type="button" aria-label="Reproducir audio">▶</button>
+          <div class="audio-body">
+            <div class="audio-wave-row" id="audioWaveSeek" aria-label="Progreso del audio">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <div class="audio-progress-overlay" id="audioProgressOverlay">
+                <div class="audio-wave-fill">
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="audio-meta"><span id="audioCurrentTime">0:00</span><span id="audioDuration">0:00</span></div>
+          </div>
+          <audio id="audio1Player" preload="metadata" src="audio/audio1.mp3"></audio>
+        </div>
 
-  <!-- STEP 10 -->
-  <section class="screen" id="step10">
-    <div class="quiz-wrap">
-      <h1 class="question">¿Ya has realizado alguna desparasitación?</h1>
-      <p class="instruction">Usando medicamentos o métodos naturales.</p>
+        <div class="case-video-block">
+          <div class="case-video-title">Vea este caso</div>
+          <div class="case-video-subtitle">1 semana después de iniciar la desparasitación</div>
 
-      <div class="answers">
-        <button class="single-option" onclick="singleAnswer(this,'desparasitacion','nunca',11)">
-          <span class="emoji">😐</span>
-          <span class="single-text">No, nunca me he desparasitado.</span>
-          <span class="dot"></span>
-        </button>
+          <div class="case-video-wrap">
+            <div class="wistia_responsive_padding" style="padding:176.67% 0 0 0;position:relative;">
+              <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                <iframe src="https://fast.wistia.net/embed/iframe/j6ah8lrv39?web_component=true&seo=false" title="DEPO Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="100%" height="100%"></iframe>
+              </div>
+            </div>
+          </div>
+          <script src="https://fast.wistia.net/player.js" async></script>
+        </div>
 
-        <button class="single-option" onclick="singleAnswer(this,'desparasitacion','si',11)">
-          <span class="emoji">😁</span>
-          <span class="single-text">Sí, ya me he desparasitado.</span>
-          <span class="dot"></span>
-        </button>
+        <button class="continue" type="button" onclick="goToStep(11)">CONTINUAR</button>
       </div>
     </div>
   </section>
@@ -1574,9 +2171,181 @@
           ¿Te interesaría recibir un protocolo personalizado de desparasitación para librarte de estos dolores de una vez por todas en solo 9 días, utilizando mi receta natural?
         </h1>
 
-        <button class="main-cta" type="button" onclick="finishQuiz()">
+        <button class="main-cta" type="button" onclick="goToTreatmentStep()">
           ✅ SÍ, ¡LO QUIERO!
         </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TREATMENTS USED -->
+  <section class="screen" id="stepTreatment">
+    <div class="quiz-wrap">
+      <h1 class="question">¿Qué tipos de tratamiento o medicamentos ya usaste para aliviar los dolores?</h1>
+      <p class="instruction">Selecciona todos los que probaste</p>
+
+      <div class="options" data-multi-group="tratamientos_usados">
+        <button class="multi-option" data-value="Analgésicos"><span class="check"></span><span>💊 Analgésicos (ej: paracetamol, tramadol)</span></button>
+        <button class="multi-option" data-value="Antiinflamatorios"><span class="check"></span><span>💢 Antiinflamatorios (ej: ibuprofeno, diclofenaco, naproxeno)</span></button>
+        <button class="multi-option" data-value="Relajantes musculares"><span class="check"></span><span>😴 Relajantes musculares</span></button>
+        <button class="multi-option" data-value="Suplementos naturales"><span class="check"></span><span>🌿 Suplementos naturales</span></button>
+        <button class="multi-option" data-value="Inyecciones para el dolor"><span class="check"></span><span>💉 Inyecciones para el dolor</span></button>
+        <button class="multi-option" data-value="Nunca usé ningún tratamiento para el dolor" data-none="true"><span class="check"></span><span>🚫 Nunca usé ningún tratamiento para el dolor</span></button>
+      </div>
+
+      <button class="continue" id="continueTreatment" disabled onclick="finishTreatmentsStep()">CONTINUAR</button>
+    </div>
+  </section>
+
+  <!-- ALTERNATIVE SOLUTIONS -->
+  <section class="screen" id="stepAlternativeSolutions">
+    <div class="quiz-wrap">
+      <h1 class="question">¿Ya probaste alguna de estas soluciones alternativas para aliviar el dolor, pero sin éxito duradero?</h1>
+      <p class="instruction">Selecciona una o más</p>
+
+      <div class="options" data-multi-group="soluciones_alternativas">
+        <button class="multi-option" data-value="Acupuntura, quiropraxia o masajes"><span class="check"></span><span>🙏 Acupuntura, quiropraxia o masajes, pero los dolores volvieron</span></button>
+        <button class="multi-option" data-value="Fisioterapia, estiramientos y ejercicios"><span class="check"></span><span>🧘 Fisioterapia, estiramientos y ejercicios, pero el dolor siempre vuelve a los pocos días</span></button>
+        <button class="multi-option" data-value="Tés, hierbas o remedios naturales"><span class="check"></span><span>🌿 Tés, hierbas o remedios naturales, mejoré al inicio, pero no fue suficiente</span></button>
+        <button class="multi-option" data-value="Pomadas, cremas y suplementos"><span class="check"></span><span>🩹 Pomadas, cremas y hasta suplementos, pero nada lo resolvió de verdad</span></button>
+        <button class="multi-option" data-value="Rodilleras, férulas o bastones"><span class="check"></span><span>🦵 Rodilleras, férulas o bastones, ayudó un poco, pero no trató la causa</span></button>
+        <button class="multi-option" data-value="Ya gasté tiempo y dinero en varias"><span class="check"></span><span>💸 Ya gasté tiempo y dinero en varias, sin resultado duradero</span></button>
+        <button class="multi-option" data-value="Todavía no probé muchas cosas"><span class="check"></span><span>🔍 Todavía no probé muchas cosas, busco algo que funcione y lo resuelva de una vez</span></button>
+      </div>
+
+      <button class="continue" id="continueAlternativeSolutions" disabled onclick="finishAlternativeSolutionsStep()">CONTINUAR</button>
+    </div>
+  </section>
+
+  <!-- EMOTIONAL FUTURE -->
+  <section class="screen" id="stepEmotionalFuture">
+    <div class="quiz-wrap">
+      <h1 class="question">¿QUÉ HARÍAS SI, EN ESTE EXACTO MOMENTO, TUS DOLORES CRÓNICOS DESAPARECIERAN Y TU VIDA VOLVIERA A LA NORMALIDAD?</h1>
+      <p class="instruction">Ahora es el momento de sentir la libertad. Imagina ese momento y selecciona una de las opciones de abajo:</p>
+
+      <div class="answers">
+        <button class="single-option" type="button" onclick="singleAnswer(this,'reaccion_sin_dolor','lloraria_de_felicidad','commitment')">
+          <span class="emoji">🥳</span>
+          <span class="single-text">Lloraría de felicidad, sin poder creer que el dolor se fue para siempre.</span>
+          <span class="dot"></span>
+        </button>
+
+        <button class="single-option" type="button" onclick="singleAnswer(this,'reaccion_sin_dolor','alivio_inmenso','commitment')">
+          <span class="emoji">😌</span>
+          <span class="single-text">Sentiría un alivio inmenso, como si un sueño imposible se hubiera hecho realidad, y empezaría a planear todo lo que el dolor me impedía hacer.</span>
+          <span class="dot"></span>
+        </button>
+
+        <button class="single-option" type="button" onclick="singleAnswer(this,'reaccion_sin_dolor','energia_renovada','commitment')">
+          <span class="emoji">💪</span>
+          <span class="single-text">Sentiría una energía renovada y la certeza de que la culpa no era mía, sino de los invasores, y que ahora soy libre para vivir.</span>
+          <span class="dot"></span>
+        </button>
+
+        <button class="single-option" type="button" onclick="singleAnswer(this,'reaccion_sin_dolor','celebraria_movimientos','commitment')">
+          <span class="emoji">💃</span>
+          <span class="single-text">Celebraría cada movimiento sin dolor, cada paso ligero, cada noche de sueño profundo y reparador.</span>
+          <span class="dot"></span>
+        </button>
+
+        <button class="single-option" type="button" onclick="singleAnswer(this,'reaccion_sin_dolor','miedo_y_alegria','commitment')">
+          <span class="emoji">😄</span>
+          <span class="single-text">Me daría miedo... ¿será realmente verdad? Pero enseguida llegaría la alegría de saber que sí.</span>
+          <span class="dot"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMITMENT -->
+  <section class="screen" id="stepCommitment">
+    <div class="quiz-wrap">
+      <div class="final-question-card">
+        <h1 class="question">¿Te comprometes a seguir nuestro Protocolo de 9 Días en Casa?</h1>
+        <p class="instruction">Voy a ayudarte en todo lo que necesites.</p>
+
+        <div class="answers">
+          <button class="single-option" type="button" onclick="finishCommitment(this,'si_me_comprometo')">
+            <span class="emoji">😍</span>
+            <span class="single-text">Sí, ¡me comprometo!</span>
+            <span class="dot"></span>
+          </button>
+
+          <button class="single-option" type="button" onclick="finishCommitment(this,'voy_a_intentarlo')">
+            <span class="emoji">😀</span>
+            <span class="single-text">¡Voy a intentarlo!</span>
+            <span class="dot"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST PART -->
+  <section class="screen" id="stepBestPart">
+    <div class="quiz-wrap">
+      <h1 class="question">¿Cuál sería la mejor parte de liberarte de los dolores articulares?</h1>
+
+      <div class="answers">
+        <button class="single-option" type="button" onclick="finishBestPart(this,'caminar_sin_miedo')">
+          <span class="single-text">Poder caminar y moverme sin miedo</span>
+          <span class="dot"></span>
+        </button>
+
+        <button class="single-option" type="button" onclick="finishBestPart(this,'dormir_y_descansar')">
+          <span class="single-text">Dormir bien y despertarme descansado(a)</span>
+          <span class="dot"></span>
+        </button>
+
+        <button class="single-option" type="button" onclick="finishBestPart(this,'activo_con_familia')">
+          <span class="single-text">Jugar y mantenerme activo(a) con mi familia</span>
+          <span class="dot"></span>
+        </button>
+
+        <button class="single-option" type="button" onclick="finishBestPart(this,'libertad_en_el_cuerpo')">
+          <span class="single-text">Volver a tener libertad en mi cuerpo</span>
+          <span class="dot"></span>
+        </button>
+
+        <button class="single-option" type="button" onclick="finishBestPart(this,'no_depender_de_nadie')">
+          <span class="single-text">No depender más de nadie para nada</span>
+          <span class="dot"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIO 2 + PROVAS -->
+  <section class="screen" id="stepAudio2">
+    <div class="quiz-wrap">
+      <div class="audio2-intro">
+        <h1 class="audio2-title">Perfecto, <strong>escucha el audio de abajo: 👇</strong></h1>
+        <p class="audio2-helper">Si el AUDIO no comienza, solo haz clic en él.</p>
+
+        <div class="whatsapp-audio" id="whatsappAudioCard2">
+          <img class="audio-avatar" src="images/expert.webp" alt="Dr. Juan Carlos Mendoza">
+          <button class="audio-play" id="audioPlayBtn2" type="button" aria-label="Reproducir audio">▶</button>
+          <div class="audio-body">
+            <div class="audio-wave-row" id="audioWaveSeek2" aria-label="Progreso del audio">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <div class="audio-progress-overlay" id="audioProgressOverlay2">
+                <div class="audio-wave-fill"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="audio-meta"><span id="audioCurrentTime2">0:00</span><span id="audioDuration2">0:00</span></div>
+          </div>
+          <audio id="audio2Player" preload="metadata" src="audio/audio2.mp3"></audio>
+        </div>
+
+        <div class="proof-carousel-wrap">
+          <div class="proof-carousel" aria-label="Testimonios">
+            <div class="proof-slide"><img src="images/whats1.webp" alt="Testimonio 1"></div>
+            <div class="proof-slide"><img src="images/whats2.webp" alt="Testimonio 2"></div>
+          </div>
+          <div class="proof-swipe-hint">← Desliza hacia un lado →</div>
+        </div>
+
+        <button class="continue" type="button" onclick="finishQuiz()">GENERAR MI PROTOCOLO ➜</button>
       </div>
     </div>
   </section>
@@ -1617,20 +2386,12 @@
   <section class="screen" id="step12">
     <div class="vsl-page">
       <h1 class="vsl-headline">
-        TU RECETA ESTÁ LISTA, MIRA EL VIDEO DE ABAJO Y VE QUÉ HACER 👇
+        TU PROTOCOLO ESTÁ LISTO, MIRA EL VIDEO DE ABAJO Y VE QUÉ HACER 👇
       </h1>
 
 
       <div class="vsl-wrap">
-        <vturb-smartplayer id="vid-6aaec84f2ab82e549f67cc70" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;">
-          <div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 176.66666666666666% 0 0; z-index: 0; background-color: black;"></div>
-        </vturb-smartplayer>
-        <script type="text/javascript">
-          var s=document.createElement("script");
-          s.src="https://scripts.converteai.net/15c55340-cc1a-4abb-9c8a-da5918cd9642/players/6aaec84f2ab82e549f67cc70/v4/player.js";
-          s.async=!0;
-          document.head.appendChild(s);
-        </script>
+        <vturb-smartplayer id="vid-6ab1a9b8233be08a36ac7fab" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 178.21782178217822% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/15c55340-cc1a-4abb-9c8a-da5918cd9642/players/6ab1a9b8233be08a36ac7fab/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
       </div>
     </div>
   </section>
@@ -1647,16 +2408,24 @@
     const progressBar = document.getElementById('progressBar');
 
     const progressByStep = {
-      2:10,
-      3:20,
-      4:30,
-      5:40,
-      6:50,
-      7:60,
-      8:70,
-      9:80,
-      10:90,
-      11:100
+      3:10,
+      3.5:15,
+      4:20,
+      5:30,
+      10:40,
+      5.5:48,
+      5.75:55,
+      6:62,
+      7:70,
+      8:80,
+      9:90,
+      11:92,
+      11.5:92,
+      11.75:95,
+      11.8:96,
+      11.9:98,
+      11.95:98,
+      11.97:100
     };
 
     function saveState(key, value){
@@ -1677,7 +2446,8 @@
       header.classList.remove('static');
 
       if(step === 1){
-        header.classList.remove('show');
+        header.classList.add('show');
+        header.classList.add('static');
         progressShell.classList.remove('show');
         backBtn.classList.remove('show');
         return;
@@ -1691,7 +2461,7 @@
         backBtn.classList.remove('show');
       }else{
         progressShell.classList.add('show');
-        backBtn.classList.toggle('show', step >= 2 && step <= 11);
+        backBtn.classList.toggle('show', step >= 2 && step <= 11.97);
         progressBar.style.width = (progressByStep[step] || 100) + '%';
       }
     }
@@ -1704,18 +2474,100 @@
 
     function goBack(){
       if(currentStep <= 1 || currentStep >= 12) return;
+
+      if(currentStep === 3){
+        goToStep(1);
+        return;
+      }
+
+      if(currentStep === 3.5){
+        goToStep(3);
+        return;
+      }
+
+      if(currentStep === 4){
+        currentStep = 3.5;
+        showScreen('stepMedicalConsult');
+        setChromeForStep(3.5);
+        return;
+      }
+
+      if(currentStep === 10){
+        goToStep(5);
+        return;
+      }
+
+      if(currentStep === 5.5){
+        goToStep(10);
+        return;
+      }
+
+      if(currentStep === 5.75){
+        currentStep = 5.5;
+        showScreen('stepDiagnosis');
+        setChromeForStep(5.5);
+        return;
+      }
+
+      if(currentStep === 6){
+        currentStep = 5.75;
+        showScreen('stepAwareness');
+        setChromeForStep(5.75);
+        return;
+      }
+
+      if(currentStep === 11.97){
+        currentStep = 11.95;
+        showScreen('stepBestPart');
+        setChromeForStep(11.95);
+        return;
+      }
+
+      if(currentStep === 11.95){
+        currentStep = 11.9;
+        showScreen('stepCommitment');
+        setChromeForStep(11.9);
+        return;
+      }
+
+      if(currentStep === 11.9){
+        currentStep = 11.8;
+        showScreen('stepEmotionalFuture');
+        setChromeForStep(11.8);
+        return;
+      }
+
+      if(currentStep === 11.8){
+        currentStep = 11.75;
+        showScreen('stepAlternativeSolutions');
+        setChromeForStep(11.75);
+        return;
+      }
+
+      if(currentStep === 11.75){
+        currentStep = 11.5;
+        showScreen('stepTreatment');
+        setChromeForStep(11.5);
+        return;
+      }
+
+      if(currentStep === 11.5){
+        goToStep(11);
+        return;
+      }
+
+      if(currentStep === 11){
+        goToStep(9);
+        return;
+      }
+
       goToStep(currentStep - 1);
     }
 
-    function selectGender(gender){
-      saveState('genero', gender);
-
-      const img = document.getElementById('genderPainImage');
-      img.src = gender === 'hombre'
-        ? 'images/doreshomem.webp'
-        : 'images/doresmulher.webp';
-
-      goToStep(3);
+    function goToAwarenessStep(){
+      currentStep = 5.75;
+      showScreen('stepAwareness');
+      setChromeForStep(5.75);
     }
 
     function singleAnswer(button, key, value, nextStep){
@@ -1726,6 +2578,24 @@
       saveState(key, value);
 
       setTimeout(() => {
+        if(nextStep === 'medical') {
+          currentStep = 3.5;
+          showScreen('stepMedicalConsult');
+          setChromeForStep(3.5);
+          return;
+        }
+        if(nextStep === 'diagnosis') {
+          currentStep = 5.5;
+          showScreen('stepDiagnosis');
+          setChromeForStep(5.5);
+          return;
+        }
+        if(nextStep === 'commitment') {
+          currentStep = 11.9;
+          showScreen('stepCommitment');
+          setChromeForStep(11.9);
+          return;
+        }
         goToStep(nextStep);
       }, 180);
     }
@@ -1736,7 +2606,9 @@
       const buttonMap = {
         condiciones:'continue5',
         sintomas_principais:'continue6',
-        alimentos_ultimos_3_meses:'continue9'
+        alimentos_ultimos_3_meses:'continue9',
+        tratamientos_usados:'continueTreatment',
+        soluciones_alternativas:'continueAlternativeSolutions'
       };
       const continueBtn = document.getElementById(buttonMap[groupName]);
       if(continueBtn) continueBtn.disabled = selected === 0;
@@ -1764,6 +2636,34 @@
       });
     });
 
+    function formatConditionList(items){
+      const cleaned = items
+        .filter(item => item !== 'Ninguna de las opciones')
+        .map(item => item.charAt(0).toLowerCase() + item.slice(1));
+
+      if(!cleaned.length) return 'dolor articular';
+      if(cleaned.length === 1) return cleaned[0];
+      if(cleaned.length === 2) return cleaned[0] + ' y ' + cleaned[1];
+      return cleaned.slice(0,-1).join(', ') + ' y ' + cleaned[cleaned.length - 1];
+    }
+
+    function continueConditionsToDiagnosis(){
+      const group = document.querySelector('[data-multi-group="condiciones"]');
+      const selected = [...group.querySelectorAll('.multi-option.selected')]
+        .map(btn => btn.dataset.value);
+
+      if(!selected.length) return;
+
+      saveState('condiciones', selected);
+
+      const diagnosisConditions = document.getElementById('diagnosisConditions');
+      if(diagnosisConditions){
+        diagnosisConditions.textContent = formatConditionList(selected);
+      }
+
+      goToStep(10);
+    }
+
     function continueMulti(groupName, nextStep){
       const group = document.querySelector(`[data-multi-group="${groupName}"]`);
       const selected = [...group.querySelectorAll('.multi-option.selected')]
@@ -1775,9 +2675,187 @@
       goToStep(nextStep);
     }
 
+    function formatAudioTime(seconds){
+      if(!Number.isFinite(seconds)) return '0:00';
+      const mins = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60).toString().padStart(2,'0');
+      return `${mins}:${secs}`;
+    }
+
+    const audio1Player = document.getElementById('audio1Player');
+    const audioPlayBtn = document.getElementById('audioPlayBtn');
+    const audioCurrentTime = document.getElementById('audioCurrentTime');
+    const audioDuration = document.getElementById('audioDuration');
+    const audioProgressOverlay = document.getElementById('audioProgressOverlay');
+    const audioWaveSeek = document.getElementById('audioWaveSeek');
+
+    if(audio1Player && audioPlayBtn){
+      audioPlayBtn.addEventListener('click', async () => {
+        try{
+          if(audio1Player.paused){
+            await audio1Player.play();
+          }else{
+            audio1Player.pause();
+          }
+        }catch(e){}
+      });
+
+      audio1Player.addEventListener('play', () => {
+        audioPlayBtn.textContent = '❚❚';
+        audioPlayBtn.classList.add('is-playing');
+        audioPlayBtn.setAttribute('aria-label','Pausar audio');
+      });
+
+      audio1Player.addEventListener('pause', () => {
+        audioPlayBtn.textContent = '▶';
+        audioPlayBtn.classList.remove('is-playing');
+        audioPlayBtn.setAttribute('aria-label','Reproducir audio');
+      });
+
+      audio1Player.addEventListener('loadedmetadata', () => {
+        audioDuration.textContent = formatAudioTime(audio1Player.duration);
+      });
+
+      audio1Player.addEventListener('timeupdate', () => {
+        audioCurrentTime.textContent = formatAudioTime(audio1Player.currentTime);
+        const pct = audio1Player.duration ? (audio1Player.currentTime / audio1Player.duration) * 100 : 0;
+        audioProgressOverlay.style.width = `${pct}%`;
+      });
+
+      audio1Player.addEventListener('ended', () => {
+        audioPlayBtn.textContent = '▶';
+        audioPlayBtn.classList.remove('is-playing');
+        audioProgressOverlay.style.width = '100%';
+      });
+
+      if(audioWaveSeek){
+        audioWaveSeek.addEventListener('click', (event) => {
+          if(!audio1Player.duration) return;
+          const rect = audioWaveSeek.getBoundingClientRect();
+          const ratio = Math.min(1, Math.max(0, (event.clientX - rect.left) / rect.width));
+          audio1Player.currentTime = ratio * audio1Player.duration;
+        });
+      }
+    }
+
+    const audio2Player = document.getElementById('audio2Player');
+    const audioPlayBtn2 = document.getElementById('audioPlayBtn2');
+    const audioCurrentTime2 = document.getElementById('audioCurrentTime2');
+    const audioDuration2 = document.getElementById('audioDuration2');
+    const audioProgressOverlay2 = document.getElementById('audioProgressOverlay2');
+    const audioWaveSeek2 = document.getElementById('audioWaveSeek2');
+
+    if(audio2Player && audioPlayBtn2){
+      audioPlayBtn2.addEventListener('click', async () => {
+        try{
+          if(audio2Player.paused){
+            await audio2Player.play();
+          }else{
+            audio2Player.pause();
+          }
+        }catch(e){}
+      });
+
+      audio2Player.addEventListener('play', () => {
+        audioPlayBtn2.textContent = '❚❚';
+        audioPlayBtn2.classList.add('is-playing');
+        audioPlayBtn2.setAttribute('aria-label','Pausar audio');
+      });
+
+      audio2Player.addEventListener('pause', () => {
+        audioPlayBtn2.textContent = '▶';
+        audioPlayBtn2.classList.remove('is-playing');
+        audioPlayBtn2.setAttribute('aria-label','Reproducir audio');
+      });
+
+      audio2Player.addEventListener('loadedmetadata', () => {
+        audioDuration2.textContent = formatAudioTime(audio2Player.duration);
+      });
+
+      audio2Player.addEventListener('timeupdate', () => {
+        audioCurrentTime2.textContent = formatAudioTime(audio2Player.currentTime);
+        const pct = audio2Player.duration ? (audio2Player.currentTime / audio2Player.duration) * 100 : 0;
+        audioProgressOverlay2.style.width = `${pct}%`;
+      });
+
+      audio2Player.addEventListener('ended', () => {
+        audioPlayBtn2.textContent = '▶';
+        audioPlayBtn2.classList.remove('is-playing');
+        audioProgressOverlay2.style.width = '100%';
+      });
+
+      if(audioWaveSeek2){
+        audioWaveSeek2.addEventListener('click', (event) => {
+          if(!audio2Player.duration) return;
+          const rect = audioWaveSeek2.getBoundingClientRect();
+          const ratio = Math.min(1, Math.max(0, (event.clientX - rect.left) / rect.width));
+          audio2Player.currentTime = ratio * audio2Player.duration;
+        });
+      }
+    }
+
+    function goToTreatmentStep(){
+      saveState('interes_protocolo','si');
+      currentStep = 11.5;
+      showScreen('stepTreatment');
+      setChromeForStep(11.5);
+    }
+
+    function finishTreatmentsStep(){
+      const group = document.querySelector('[data-multi-group="tratamientos_usados"]');
+      const selected = [...group.querySelectorAll('.multi-option.selected')]
+        .map(btn => btn.dataset.value);
+
+      if(!selected.length) return;
+
+      saveState('tratamientos_usados', selected);
+      currentStep = 11.75;
+      showScreen('stepAlternativeSolutions');
+      setChromeForStep(11.75);
+    }
+
+    function finishAlternativeSolutionsStep(){
+      const group = document.querySelector('[data-multi-group="soluciones_alternativas"]');
+      const selected = [...group.querySelectorAll('.multi-option.selected')]
+        .map(btn => btn.dataset.value);
+
+      if(!selected.length) return;
+
+      saveState('soluciones_alternativas', selected);
+      currentStep = 11.8;
+      showScreen('stepEmotionalFuture');
+      setChromeForStep(11.8);
+    }
+
+    function finishCommitment(button, value){
+      const group = button.parentElement;
+      group.querySelectorAll('button').forEach(btn => btn.classList.remove('selected'));
+      button.classList.add('selected');
+      saveState('compromiso_protocolo', value);
+
+      setTimeout(() => {
+        currentStep = 11.95;
+        showScreen('stepBestPart');
+        setChromeForStep(11.95);
+      }, 180);
+    }
+
+    function finishBestPart(button, value){
+      const group = button.parentElement;
+      group.querySelectorAll('button').forEach(btn => btn.classList.remove('selected'));
+      button.classList.add('selected');
+      saveState('mejor_parte_sin_dolor', value);
+
+      setTimeout(() => {
+        currentStep = 11.97;
+        showScreen('stepAudio2');
+        setChromeForStep(11.97);
+      }, 180);
+    }
+
     function finishQuiz(){
       saveState('interes_protocolo','si');
-      currentStep = 11;
+      currentStep = 11.9;
       document.body.classList.remove('vsl-mode');
       header.classList.add('show');
       header.classList.remove('static');
