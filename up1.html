@@ -259,6 +259,144 @@
         s.async=!0;
         document.head.appendChild(s);
       </script>
+
+      <!-- HOTMART SYNC START -->
+      <div id="offer-after-pitch" class="offer-after-pitch">
+        <!-- HOTMART - Sales Funnel Widget -->
+        <div id="hotmart-sales-funnel"></div>
+
+        <!-- script load and setup -->
+        <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+        <script>
+          checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+        </script>
+      </div>
+
+      <style>
+        .offer-after-pitch {
+          display: none;
+          width: 100%;
+          max-width: 650px;
+          margin: 22px auto 0;
+        }
+
+        .offer-after-pitch.is-visible {
+          display: block;
+        }
+
+        @media (max-width: 480px) {
+          .offer-after-pitch {
+            margin-top: 16px;
+          }
+        }
+      </style>
+
+      <script>
+        (function () {
+          const PITCH_TIME_SECONDS = 397; // 06:37
+          const PLAYER_ID = "vid-6ab1c91abe5b4b2f580f31ef";
+          const OFFER_ID = "offer-after-pitch";
+          const STORAGE_KEY = "regenera3x_pitch_0637_reached";
+
+          const offer = document.getElementById(OFFER_ID);
+          if (!offer) return;
+
+          function showOffer() {
+            if (offer.classList.contains("is-visible")) return;
+
+            offer.classList.add("is-visible");
+
+            try {
+              localStorage.setItem(STORAGE_KEY, "true");
+            } catch (e) {}
+          }
+
+          // Se a pessoa já chegou ao pitch anteriormente,
+          // mantém o botão disponível ao recarregar a página.
+          try {
+            if (localStorage.getItem(STORAGE_KEY) === "true") {
+              showOffer();
+              return;
+            }
+          } catch (e) {}
+
+          let attempts = 0;
+          const maxAttempts = 120;
+
+          function connectToPlayer() {
+            attempts++;
+
+            if (
+              typeof window.smartplayer === "undefined" ||
+              !window.smartplayer.instances ||
+              !window.smartplayer.instances.length
+            ) {
+              if (attempts < maxAttempts) {
+                setTimeout(connectToPlayer, 500);
+              }
+              return;
+            }
+
+            let player =
+              window.smartplayer.instances.find(function (instance) {
+                try {
+                  return (
+                    instance &&
+                    (
+                      instance.id === PLAYER_ID ||
+                      instance.video?.id === PLAYER_ID ||
+                      instance.el?.id === PLAYER_ID
+                    )
+                  );
+                } catch (e) {
+                  return false;
+                }
+              }) || window.smartplayer.instances[0];
+
+            if (!player) return;
+
+            function checkCurrentTime() {
+              try {
+                const currentTime =
+                  player.video && typeof player.video.currentTime === "number"
+                    ? player.video.currentTime
+                    : typeof player.currentTime === "number"
+                      ? player.currentTime
+                      : 0;
+
+                if (currentTime >= PITCH_TIME_SECONDS) {
+                  showOffer();
+                }
+              } catch (e) {}
+            }
+
+            if (typeof player.on === "function") {
+              player.on("timeupdate", checkCurrentTime);
+              player.on("play", checkCurrentTime);
+              player.on("seeked", checkCurrentTime);
+            }
+
+            // Fallback adicional: continua lendo o tempo REAL do vídeo.
+            const watcher = setInterval(function () {
+              if (offer.classList.contains("is-visible")) {
+                clearInterval(watcher);
+                return;
+              }
+              checkCurrentTime();
+            }, 500);
+
+            checkCurrentTime();
+          }
+
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", connectToPlayer);
+          } else {
+            connectToPlayer();
+          }
+        })();
+      </script>
+      <!-- HOTMART SYNC END -->
+
     </section>
   </main>
 
