@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Última Oportunidad - Regenera 3X</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #171717;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page {
+      width: 100%;
+      padding: 0 14px 42px;
+    }
+
+    .container {
+      width: min(760px, 100%);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .top-alert {
+      margin: 0 -14px 24px;
+      padding: 18px 14px;
+      background: #c91414;
+      color: #ffffff;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,.12);
+    }
+
+    .top-alert h1 {
+      width: min(760px, 100%);
+      margin: 0 auto;
+      font-size: clamp(22px, 5vw, 34px);
+      line-height: 1.08;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.4px;
+    }
+
+    .intro {
+      width: min(690px, 100%);
+      margin: 0 auto;
+      font-size: clamp(16px, 3.8vw, 20px);
+      line-height: 1.5;
+      color: #232323;
+    }
+
+    .intro p + p {
+      margin-top: 14px;
+    }
+
+    .product-combo {
+      font-weight: 800;
+    }
+
+    .highlight {
+      font-weight: 800;
+    }
+
+    .product-image-wrap {
+      width: 100%;
+      margin: 24px auto 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .product-image {
+      display: block;
+      width: min(100%, 560px);
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+    }
+
+    .offer-box {
+      width: min(650px, 100%);
+      margin: 0 auto;
+      padding: 24px 20px;
+      background: #f7f7f7;
+      border: 1px solid #e5e5e5;
+      border-radius: 14px;
+      box-shadow: 0 7px 22px rgba(0,0,0,.07);
+    }
+
+    .offer-label {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: #c91414;
+      color: #ffffff;
+      font-size: 13px;
+      line-height: 1;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .25px;
+    }
+
+    .offer-main {
+      font-size: clamp(20px, 4.8vw, 27px);
+      line-height: 1.28;
+      font-weight: 800;
+      color: #171717;
+    }
+
+    .price {
+      color: #159447;
+      font-size: 1.22em;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .payment {
+      margin-top: 10px;
+      font-size: clamp(15px, 3.5vw, 18px);
+      font-weight: 800;
+    }
+
+    .guarantee {
+      margin-top: 13px;
+      font-size: clamp(14px, 3.3vw, 17px);
+      line-height: 1.4;
+    }
+
+    .urgency {
+      width: min(650px, 100%);
+      margin: 22px auto 0;
+      font-size: clamp(16px, 3.7vw, 19px);
+      line-height: 1.48;
+      color: #222222;
+    }
+
+    .urgency strong {
+      font-weight: 900;
+    }
+
+    .button-slot {
+      width: min(650px, 100%);
+      margin: 24px auto 0;
+    }
+
+    /* INSERIR O HTML DO BOTÃO AQUI */
+
+    @media (max-width: 480px) {
+      .page {
+        padding: 0 11px 30px;
+      }
+
+      .top-alert {
+        margin: 0 -11px 19px;
+        padding: 14px 11px;
+      }
+
+      .top-alert h1 {
+        font-size: 20px;
+        line-height: 1.07;
+      }
+
+      .intro {
+        font-size: 15px;
+        line-height: 1.43;
+      }
+
+      .intro p + p {
+        margin-top: 11px;
+      }
+
+      .product-image-wrap {
+        margin: 19px auto 16px;
+      }
+
+      .product-image {
+        width: min(100%, 430px);
+      }
+
+      .offer-box {
+        padding: 20px 15px;
+        border-radius: 11px;
+      }
+
+      .offer-label {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+
+      .offer-main {
+        font-size: 19px;
+      }
+
+      .payment {
+        font-size: 15px;
+      }
+
+      .guarantee {
+        font-size: 14px;
+      }
+
+      .urgency {
+        margin-top: 18px;
+        font-size: 15px;
+        line-height: 1.43;
+      }
+
+      .button-slot {
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .top-alert h1 {
+        font-size: 18px;
+      }
+
+      .intro,
+      .urgency {
+        font-size: 14px;
+      }
+
+      .offer-main {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <section class="top-alert">
+      <h1>¡ESPERA! TENGO UNA ÚLTIMA OPORTUNIDAD PARA TI...</h1>
+    </section>
+
+    <div class="container">
+
+      <section class="intro">
+        <p>
+          Me gustaría mucho que pudieras comenzar esta etapa combinando el
+          <span class="product-combo">Protocolo de Desparasitación Articular + Regenera 3X</span>.
+        </p>
+
+        <p>
+          Por eso, <span class="highlight">solo aquí y ahora</span>, decidí darte un descuento especial que no aparecerá nuevamente.
+        </p>
+      </section>
+
+      <div class="product-image-wrap">
+        <img
+          src="downsell1.webp"
+          alt="Regenera 3X"
+          class="product-image"
+          width="1080"
+          height="1080"
+        />
+      </div>
+
+      <section class="offer-box">
+        <div class="offer-label">SOLO EN ESTA PÁGINA</div>
+
+        <div class="offer-main">
+          Puedes añadir <strong>REGENERA 3X</strong> por apenas
+          <span class="price">$11</span>.
+        </div>
+
+        <div class="payment">
+          Pago único. Sin mensualidades.
+        </div>
+
+        <div class="guarantee">
+          Además, tendrás <strong>45 días de garantía</strong> para probarlo con tranquilidad.
+        </div>
+      </section>
+
+      <section class="urgency">
+        <p><strong>Pero necesitas decidirlo ahora.</strong></p>
+
+        <p style="margin-top: 10px;">
+          Cuando salgas de esta página, <strong>esta oferta de $11 desaparecerá y no volverás a verla a este precio.</strong>
+        </p>
+      </section>
+
+      <div class="button-slot">
+        <!-- HOTMART - Sales Funnel Widget -->
+        <div id="hotmart-sales-funnel"></div>
+
+        <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+        <script>
+          checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+        </script>
+        <!-- HOTMART - Sales Funnel Widget -->
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
